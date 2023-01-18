@@ -1,17 +1,13 @@
 import AddNewTodo from "./add-new-todo";
 import TodoList from "./todo-list";
 import Todo from "./todo";
-
-interface Todo {
-  id: number;
-  title: string;
-  completed: boolean;
-}
+// import getTodos from "./todo-list";
 
 export default async function Page(){
 
   let res  = await fetch("https://kas-json-api.vercel.app/api/todo/list");
   const {todos} = await res.json();
+  // const {todos}:any = await getTodos();
   
   // console.log(todos);
   return (

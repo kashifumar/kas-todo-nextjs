@@ -1,6 +1,12 @@
 "use client";
 import { useRouter } from "next/navigation";
 
+export interface TodoI {
+  id: string;
+  name: string;
+  isDone: boolean;
+}
+
 async function update(id:string, isDone:boolean, refresh:()=>void){
   await fetch("/api/todo/update",{
     method:'POST',
@@ -17,7 +23,7 @@ async function delete_todo(id:string, refresh:()=>void){
   });
   refresh();
 }
-export default function Todo({todo}:any) {
+export default function Todo({todo}:{todo:TodoI}) {
   const router = useRouter();
   return (
     <>

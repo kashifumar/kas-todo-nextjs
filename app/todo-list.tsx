@@ -1,9 +1,5 @@
 import Todo from "./todo";
-export interface Todo {
-  id: number;
-  title: string;
-  completed: boolean;
-}
+
 
 const getTodos = async () => {
   let res  = await fetch("https://kas-json-api.vercel.app/api/todo/list");
