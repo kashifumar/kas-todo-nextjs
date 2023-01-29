@@ -13,9 +13,12 @@ export default function Page(){
     {/* @ts-expect-error Server Component */}
     <TodoList/>
     </main>
-    </div>
-    
- 
+    </div>    
+    <footer className={"app-footer"}>
+      <div>
+        <a href="https://github.com/kashifumar">Kashif Umar</a><span>&copy; 2023.</span>
+      </div>        
+    </footer>
     </>
   );
 }

@@ -9,6 +9,7 @@ const nextConfig = {
       {
         source: "/api/:path*",
         destination: "https://kas-json-api.vercel.app/api/:path*"
+        // destination: "http://localhost:3002/api/:path*"
       }
     ];
 

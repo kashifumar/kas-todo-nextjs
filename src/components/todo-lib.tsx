@@ -6,6 +6,7 @@ export interface TodoI {
 
 export async function getTodos(){
   let res  = await fetch("https://kas-json-api.vercel.app/api/todo/list");
+  // let res  = await fetch("http://localhost:3002/api/todo/list");
   const todos: TodoI[] = await res.json();
   return todos;
 }

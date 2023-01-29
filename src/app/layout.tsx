@@ -14,11 +14,6 @@ export default function RootLayout({
       */}
       <Head />
       <body>{children}</body>
-      <footer className={"app-footer"}>
-      <div>
-        <a href="https://github.com/kashifumar">Kashif Umar</a><span>&copy; 2023.</span>
-      </div>        
-    </footer>
     </html>
   )
 }

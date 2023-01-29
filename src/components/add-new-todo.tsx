@@ -10,7 +10,7 @@ export default function AddNewTodo(){
     <div className={"card"}>
     <div className={"card-body"}>
       <div className={"row"}>
-        <div className={"col-4 mt-2 mb-2"}></div>
+        <div className={"col-5 mt-2 mb-2"}></div>
         <div className={"col-2 mt-2 mb-2"}>
           <input type="text" className={""} placeholder="Type Your Task" onChange={(e)=>setName(e.target.value)}/>
         </div>

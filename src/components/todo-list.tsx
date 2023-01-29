@@ -11,7 +11,7 @@ export default async function TodoList(){
         <div className={"col-4 mt-2 mb-2"}>
           <ul style={{listStyleType:"none",padding:0}}>
         {todos.map((t:any)=> {
-          return(<li key={t.id} style={{padding:"5px 0"}}>
+          return(<li key={t.id} style={{padding:"5px 0"}}>            
             <Todo todo={t}/>
           </li>
           );
