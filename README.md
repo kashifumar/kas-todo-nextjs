@@ -1,7 +1,3 @@
-Next.js 13 - Building a Todo App
-Build a Todo App using Next.js 13 After Watching this video
-https://www.youtube.com/watch?v=Y1FwWlBFUi8&list=PLxCkFZQohykk8ejbV94XbigHSONNq4m3C
-and using API from https://github.com/tumetus/json-api
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
