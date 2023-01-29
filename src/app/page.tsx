@@ -1,5 +1,6 @@
 import AddNewTodo from "@/components/add-new-todo";
 import TodoList from "@/components/todo-list";
+import Link from 'next/link'
 
 export default function Page(){
   return (
@@ -12,12 +13,24 @@ export default function Page(){
     <AddNewTodo/>    
     {/* @ts-expect-error Server Component */}
     <TodoList/>
+
+    <div className={"row"}>
+      <div className={"col-12 text-center"}>
+      <strong>
+          <Link href="https://github.com/kashifumar/kas-todo-nextjs">Github Project Repo</Link>
+        </strong>
+      </div>
+    </div>
+
     </main>
     </div>    
-    <footer className={"app-footer"}>
-      <div>
-        <a href="https://github.com/kashifumar">Kashif Umar</a><span>&copy; 2023.</span>
-      </div>        
+    <footer className={"app-footer row"}>
+      <div className={"col-12 text-center"}>
+        <strong>
+          <Link href="https://github.com/kashifumar">Kashif Umar</Link><span>&copy; 2023.</span>
+        </strong>
+      </div>
+        
     </footer>
     </>
   );
